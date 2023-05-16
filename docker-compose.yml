@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    uniswapinstant:
+        build: .
+        container_name: cont_uniswapinstant
+        restart: always
+        command: python bot_monitoring_uniswapinstant.py
+        volumes:
+        - .:/bot/
